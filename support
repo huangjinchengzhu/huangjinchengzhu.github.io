@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技术支持中心 - Technical Support</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 30px 20px; line-height: 1.7; color: #333; }
+  h1 { border-bottom: 2px solid #007aff; padding-bottom: 10px; }
+  h2 { color: #007aff; margin-top: 35px; }
+  .contact-box { background: #f5f5f7; padding: 15px 20px; border-radius: 8px; margin: 15px 0; }
+  .faq-item { margin-bottom: 18px; }
+  .faq-q { font-weight: bold; }
+  .warn { color: #d00; font-weight: bold; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 40px 0; }
+  .en { color: #444; }
+</style>
+</head>
+<body>
+
+<h1>技术支持中心-Technical Support Center</h1>
+
+<div class="contact-box">
+  <strong>开发者：</strong>张辉武<br>
+  <strong>联系邮箱：</strong>280880560@qq.com
+</div>
+
+<p>欢迎来到我的应用技术支持页面。如果您在使用本开发者发布的任何应用过程中遇到问题、Bug 或有改进建议，欢迎通过邮件与我联系，我会尽快回复并处理。</p>
+
+<h2>关于本开发者的应用</h2>
+<p>本开发者发布的应用以手表单机应用为主。</p>
+<ul>
+  <li><strong>部分应用为独立 Apple Watch 应用</strong>：iPhone 端仅作为安装容器，不包含游戏功能，请在 Apple Watch 设备上启动并游玩。</li>
+  <li><strong>部分应用含心率相关功能</strong>：心率数据仅用于游戏内玩法与休闲提醒，所有提示仅供娱乐参考，<span class="warn">不构成任何医疗诊断或治疗建议</span>。如有身体不适，请及时咨询专业医生。</li>
+</ul>
+
+<h2>联系我们</h2>
+<p>如遇以下情况，请发送邮件至：<strong>280880560@qq.com</strong></p>
+<ul>
+  <li>应用崩溃、无法启动或功能异常</li>
+  <li>购买、下载或退款相关问题</li>
+  <li>功能建议与意见反馈</li>
+  <li>隐私与数据相关咨询</li>
+</ul>
+<p><strong>邮件中请尽量提供以下信息，以便更快定位问题：</strong></p>
+<ol>
+  <li>应用名称与版本号</li>
+  <li>Apple Watch设备型号</li>
+  <li>watchOS系统版本</li>
+  <li>问题的详细描述与复现步骤</li>
+</ol>
+
+<h2>常见问题（FAQ）</h2>
+
+<div class="faq-item">
+  <div class="faq-q">Q1：为什么在 iPhone 上打开 App 是空白的？</div>
+  <div>A：本开发者的部分产品为独立 Apple Watch 应用，iPhone 仅作为安装容器，不包含游戏内容。请在 Apple Watch 上找到对应 App 图标并启动。</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q2：手表上找不到 App 怎么办？</div>
+  <div>A：请在 iPhone 的「Watch」应用中，向下滑动找到已安装的应用列表，确认该 App 已开启「在 Apple Watch 上显示 App」。</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q3：心率提醒是医疗功能吗？</div>
+  <div>A：不是。心率数据仅用于游戏内玩法与休闲提醒，所有提示仅供娱乐参考，<span class="warn">不构成医疗诊断或治疗建议</span>。如有健康疑虑，请咨询专业医疗机构。</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q4：应用是单机游戏吗？会收集我的数据吗？</div>
+  <div>A：本开发者发布的应用均为单机休闲游戏，不强制联网，不主动收集用户个人信息。</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q5：如何申请退款？</div>
+  <div>A：App Store 购买的退款需通过苹果官方渠道处理，请访问 Apple 支持页面或联系 Apple 客服申请。</div>
+</div>
+
+<hr>
+
+<div class="en">
+
+<h1>Technical Support Center</h1>
+
+<div class="contact-box">
+  <strong>Developer:</strong> Zhang Huiwu<br>
+  <strong>Contact Email:</strong> 280880560@qq.com
+</div>
+
+<p>Welcome to my application technical support page. If you encounter any issues, bugs, or have suggestions while using any app published by this developer, please feel free to contact me by email. I will respond and resolve the problem as soon as possible.</p>
+
+<h2>About Apps by This Developer</h2>
+<p>Apps published by this developer are primarily standalone casual games for Apple Watch.</p>
+<ul>
+  <li><strong>Some apps are standalone Apple Watch apps</strong>: The iPhone app serves only as an installation container with no gameplay functionality. Please launch and play the game on your Apple Watch.</li>
+  <li><strong>Some apps include heart-rate related features</strong>: Heart-rate data is used solely for in-game mechanics and casual reminders. All prompts are for entertainment reference only and <span class="warn">do not constitute medical diagnosis or treatment advice</span>. If you feel unwell, please consult a professional doctor promptly.</li>
+</ul>
+
+<h2>Contact Us</h2>
+<p>Please email <strong>280880560@qq.com</strong> if you experience any of the following:</p>
+<ul>
+  <li>App crashes, failure to launch, or functional errors</li>
+  <li>Purchase, download, or refund issues</li>
+  <li>Feature suggestions and feedback</li>
+  <li>Privacy and data-related inquiries</li>
+</ul>
+<p><strong>To help resolve issues faster, please include the following information in your email:</strong></p>
+<ol>
+  <li>App name and version number</li>
+  <li>Apple Watch device model</li>
+  <li>watchOS system version</li>
+  <li>Detailed description and steps to reproduce the issue</li>
+</ol>
+
+<h2>Frequently Asked Questions (FAQ)</h2>
+
+<div class="faq-item">
+  <div class="faq-q">Q1: Why is the app blank when opened on iPhone?</div>
+  <div>A: Some products by this developer are standalone Apple Watch apps. The iPhone app only serves as an installation container and does not include gameplay content. Please find the app icon on your Apple Watch and launch it there.</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q2: I cannot find the app on my Apple Watch. What should I do?</div>
+  <div>A: Open the "Watch" app on your iPhone, scroll down to the list of installed apps, and make sure "Show App on Apple Watch" is enabled for the app.</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q3: Is the heart-rate reminder a medical feature?</div>
+  <div>A: No. Heart-rate data is used solely for in-game mechanics and casual reminders. All prompts are for entertainment reference only and <span class="warn">do not constitute medical diagnosis or treatment advice</span>. If you have health concerns, please consult a professional medical institution.</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q4: Are these offline games? Will my data be collected?</div>
+  <div>A: All apps published by this developer are standalone casual games, do not require a mandatory internet connection, and do not actively collect personal user data.</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q">Q5: How do I request a refund?</div>
+  <div>A: Refunds for App Store purchases must be processed through Apple's official channels. Please visit the Apple Support page or contact Apple Customer Support to request a refund.</div>
+</div>
+
+</div>
+
+</body>
+</html>
