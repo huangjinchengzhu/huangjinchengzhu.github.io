@@ -1,146 +1,240 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>技术支持中心 - Technical Support</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 30px 20px; line-height: 1.7; color: #333; }
-  h1 { border-bottom: 2px solid #007aff; padding-bottom: 10px; }
-  h2 { color: #007aff; margin-top: 35px; }
-  .contact-box { background: #f5f5f7; padding: 15px 20px; border-radius: 8px; margin: 15px 0; }
-  .faq-item { margin-bottom: 18px; }
-  .faq-q { font-weight: bold; }
-  .warn { color: #d00; font-weight: bold; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 40px 0; }
-  .en { color: #444; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>技术支持 - Support</title>
+    <style>
+        /* 重置 & 基础 - 苹果风格 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e5ea;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #6e6e73;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e5e5ea;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        .lang-section {
+            background: #f8f8fa;
+            border-radius: 14px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid #007aff;
+        }
+
+        .lang-section.zh {
+            border-left-color: #007aff;
+        }
+
+        .lang-section.en {
+            border-left-color: #8e8e93;
+        }
+
+        .lang-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #8e8e93;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            background: #e5e5ea;
+            padding: 2px 12px;
+            border-radius: 30px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .contact-box {
+            background: #f5f5f7;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .contact-item strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .contact-item a {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5ea;
+            margin: 30px 0 25px 0;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #8e8e93;
+            text-align: center;
+            margin-top: 25px;
+            border-top: 1px solid #e5e5ea;
+            padding-top: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #007aff;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 2px 12px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+            margin-right: 6px;
+        }
+
+        @media (max-width: 500px) {
+            body { padding: 12px; }
+            .container { padding: 25px 18px; margin: 20px auto; }
+            h1 { font-size: 1.8rem; }
+            .contact-box { flex-direction: column; align-items: flex-start; gap: 8px; }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
 
-<h1>技术支持中心-Technical Support Center</h1>
+        <h1>技术支持</h1>
+        <div class="subhead">Apple 风格 · 通用 · 中英双语</div>
 
-<div class="contact-box">
-  <strong>开发者：</strong>张辉武<br>
-  <strong>联系邮箱：</strong>280880560@qq.com
-</div>
+        <!-- ========== 中文部分 ========== -->
+        <div class="lang-section zh">
+            <div class="lang-label">中文</div>
 
-<p>欢迎来到我的应用技术支持页面。如果您在使用本开发者发布的任何应用过程中遇到问题、Bug 或有改进建议，欢迎通过邮件与我联系，我会尽快回复并处理。</p>
+            <p>欢迎使用我们的应用！我们致力于为您提供出色的体验。如果您在使用过程中遇到任何问题，或有任何建议，请通过以下方式联系我们。</p>
 
-<h2>关于本开发者的应用</h2>
-<p>本开发者发布的应用以手表单机应用为主。</p>
-<ul>
-  <li><strong>部分应用为独立 Apple Watch 应用</strong>：iPhone 端仅作为安装容器，不包含游戏功能，请在 Apple Watch 设备上启动并游玩。</li>
-  <li><strong>部分应用含心率相关功能</strong>：心率数据仅用于游戏内玩法与休闲提醒，所有提示仅供娱乐参考，<span class="warn">不构成任何医疗诊断或治疗建议</span>。如有身体不适，请及时咨询专业医生。</li>
-</ul>
+            <h2>📮 联系我们</h2>
+            <div class="contact-box">
+                <span class="contact-item"><strong>开发者：</strong> 张辉武</span>
+                <span class="contact-item"><strong>邮箱：</strong> <a href="mailto:280880560@qq.com">280880560@qq.com</a></span>
+            </div>
 
-<h2>联系我们</h2>
-<p>如遇以下情况，请发送邮件至：<strong>280880560@qq.com</strong></p>
-<ul>
-  <li>应用崩溃、无法启动或功能异常</li>
-  <li>购买、下载或退款相关问题</li>
-  <li>功能建议与意见反馈</li>
-  <li>隐私与数据相关咨询</li>
-</ul>
-<p><strong>邮件中请尽量提供以下信息，以便更快定位问题：</strong></p>
-<ol>
-  <li>应用名称与版本号</li>
-  <li>Apple Watch设备型号</li>
-  <li>watchOS系统版本</li>
-  <li>问题的详细描述与复现步骤</li>
-</ol>
+            <h2>❓ 常见问题 (FAQ)</h2>
+            <ul>
+                <li><strong>应用无法启动或意外闪退？</strong><br>请尝试重启设备。若问题依旧，请更新应用至最新版本。如仍无法解决，请邮件告知我们具体操作步骤。</li>
+                <li><strong>如何恢复已购买的项目？</strong><br>请使用应用内的“恢复购买”功能。若遇到问题，请提供 App Store 收据截图，我们会协助处理。</li>
+                <li><strong>找不到某个功能？</strong><br>请查看应用内的“设置”或“帮助”菜单。若仍有疑问，欢迎邮件咨询。</li>
+            </ul>
 
-<h2>常见问题（FAQ）</h2>
+            <h2>💬 反馈与建议</h2>
+            <p>您的反馈对我们至关重要。如果您有新功能想法或改进建议，请随时通过邮件分享给我们。</p>
+        </div>
 
-<div class="faq-item">
-  <div class="faq-q">Q1：为什么在 iPhone 上打开 App 是空白的？</div>
-  <div>A：本开发者的部分产品为独立 Apple Watch 应用，iPhone 仅作为安装容器，不包含游戏内容。请在 Apple Watch 上找到对应 App 图标并启动。</div>
-</div>
+        <!-- ========== 英文部分 ========== -->
+        <div class="lang-section en">
+            <div class="lang-label">English</div>
 
-<div class="faq-item">
-  <div class="faq-q">Q2：手表上找不到 App 怎么办？</div>
-  <div>A：请在 iPhone 的「Watch」应用中，向下滑动找到已安装的应用列表，确认该 App 已开启「在 Apple Watch 上显示 App」。</div>
-</div>
+            <p>Welcome to our app! We are committed to providing you with an excellent experience. If you encounter any issues or have suggestions, please contact us via the methods below.</p>
 
-<div class="faq-item">
-  <div class="faq-q">Q3：心率提醒是医疗功能吗？</div>
-  <div>A：不是。心率数据仅用于游戏内玩法与休闲提醒，所有提示仅供娱乐参考，<span class="warn">不构成医疗诊断或治疗建议</span>。如有健康疑虑，请咨询专业医疗机构。</div>
-</div>
+            <h2>📮 Contact Us</h2>
+            <div class="contact-box">
+                <span class="contact-item"><strong>Developer:</strong> Zhang Huiwu</span>
+                <span class="contact-item"><strong>Email:</strong> <a href="mailto:280880560@qq.com">280880560@qq.com</a></span>
+            </div>
 
-<div class="faq-item">
-  <div class="faq-q">Q4：应用是单机游戏吗？会收集我的数据吗？</div>
-  <div>A：本开发者发布的应用均为单机休闲游戏，不强制联网，不主动收集用户个人信息。</div>
-</div>
+            <h2>❓ Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>App won't launch or crashes unexpectedly?</strong><br>Try restarting your device. If the issue persists, update to the latest version. If it still doesn't work, email us with the steps you took.</li>
+                <li><strong>How to restore purchases?</strong><br>Use the "Restore Purchase" feature in the app. If problems occur, please provide your App Store receipt screenshot, and we will assist you.</li>
+                <li><strong>Can't find a feature?</strong><br>Check the "Settings" or "Help" menu in the app. If you still have questions, feel free to email us.</li>
+            </ul>
 
-<div class="faq-item">
-  <div class="faq-q">Q5：如何申请退款？</div>
-  <div>A：App Store 购买的退款需通过苹果官方渠道处理，请访问 Apple 支持页面或联系 Apple 客服申请。</div>
-</div>
+            <h2>💬 Feedback &amp; Suggestions</h2>
+            <p>Your feedback is invaluable. If you have ideas for new features or improvements, please share them with us via email.</p>
+        </div>
 
-<hr>
+        <!-- ========== 审核信息 ========== -->
+        <div class="divider"></div>
 
-<div class="en">
+        <div style="background: #f8f8fa; border-radius: 12px; padding: 14px 20px; margin: 20px 0 8px 0; font-size: 0.9rem; border: 1px solid #e5e5ea;">
+            <p style="margin: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="badge">审核必备</span>
+                <span><strong>支持网址：</strong> 此页面作为通用技术支持 URL，适用于所有 iOS / watchOS 应用。</span>
+            </p>
+            <p style="margin: 8px 0 0 0; color: #6e6e73; font-size: 0.85rem;">
+                <strong>App Store 审核指南参考：</strong> 本页面清晰提供了联系方式，符合 <a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank" style="color: #007aff; text-decoration: none;">Apple 审核指南</a> 中关于支持网址的要求。
+            </p>
+        </div>
 
-<h1>Technical Support Center</h1>
+        <div class="footer-note">
+            © 2026 张辉武 · 技术支持页面 · 适用于 iOS &amp; watchOS
+        </div>
 
-<div class="contact-box">
-  <strong>Developer:</strong> Zhang Huiwu<br>
-  <strong>Contact Email:</strong> 280880560@qq.com
-</div>
-
-<p>Welcome to my application technical support page. If you encounter any issues, bugs, or have suggestions while using any app published by this developer, please feel free to contact me by email. I will respond and resolve the problem as soon as possible.</p>
-
-<h2>About Apps by This Developer</h2>
-<p>Apps published by this developer are primarily standalone casual games for Apple Watch.</p>
-<ul>
-  <li><strong>Some apps are standalone Apple Watch apps</strong>: The iPhone app serves only as an installation container with no gameplay functionality. Please launch and play the game on your Apple Watch.</li>
-  <li><strong>Some apps include heart-rate related features</strong>: Heart-rate data is used solely for in-game mechanics and casual reminders. All prompts are for entertainment reference only and <span class="warn">do not constitute medical diagnosis or treatment advice</span>. If you feel unwell, please consult a professional doctor promptly.</li>
-</ul>
-
-<h2>Contact Us</h2>
-<p>Please email <strong>280880560@qq.com</strong> if you experience any of the following:</p>
-<ul>
-  <li>App crashes, failure to launch, or functional errors</li>
-  <li>Purchase, download, or refund issues</li>
-  <li>Feature suggestions and feedback</li>
-  <li>Privacy and data-related inquiries</li>
-</ul>
-<p><strong>To help resolve issues faster, please include the following information in your email:</strong></p>
-<ol>
-  <li>App name and version number</li>
-  <li>Apple Watch device model</li>
-  <li>watchOS system version</li>
-  <li>Detailed description and steps to reproduce the issue</li>
-</ol>
-
-<h2>Frequently Asked Questions (FAQ)</h2>
-
-<div class="faq-item">
-  <div class="faq-q">Q1: Why is the app blank when opened on iPhone?</div>
-  <div>A: Some products by this developer are standalone Apple Watch apps. The iPhone app only serves as an installation container and does not include gameplay content. Please find the app icon on your Apple Watch and launch it there.</div>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Q2: I cannot find the app on my Apple Watch. What should I do?</div>
-  <div>A: Open the "Watch" app on your iPhone, scroll down to the list of installed apps, and make sure "Show App on Apple Watch" is enabled for the app.</div>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Q3: Is the heart-rate reminder a medical feature?</div>
-  <div>A: No. Heart-rate data is used solely for in-game mechanics and casual reminders. All prompts are for entertainment reference only and <span class="warn">do not constitute medical diagnosis or treatment advice</span>. If you have health concerns, please consult a professional medical institution.</div>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Q4: Are these offline games? Will my data be collected?</div>
-  <div>A: All apps published by this developer are standalone casual games, do not require a mandatory internet connection, and do not actively collect personal user data.</div>
-</div>
-
-<div class="faq-item">
-  <div class="faq-q">Q5: How do I request a refund?</div>
-  <div>A: Refunds for App Store purchases must be processed through Apple's official channels. Please visit the Apple Support page or contact Apple Customer Support to request a refund.</div>
-</div>
-
-</div>
-
+    </div>
 </body>
 </html>
